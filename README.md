@@ -213,3 +213,30 @@ No
   color: #EEE;
 }
 ```
+
+## Cover
+
+#### Accept Arguments 
+
+No
+
+#### Example
+
+```css
+.class {
+  @include cover();
+}
+```
+
+#### Output
+
+```css
+.class {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+```
