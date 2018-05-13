@@ -22,7 +22,6 @@ This Package Include
 
 ```css
 .class {
-  @include prefixer(transition, all .3s ease, webkit moz o);
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -o-transition: all .3s ease;
@@ -38,7 +37,21 @@ This Package Include
 
 #### Example
 
-`@include opacity(.5);`
+```css
+.class {
+  @include opacity(.5);
+}
+```
+
+#### Output
+
+```css
+.class {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+ ```
 
 ## Animation Keyframes
 
