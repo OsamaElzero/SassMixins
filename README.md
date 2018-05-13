@@ -161,7 +161,7 @@ No
 
 #### Accept Arguments 
 
-1. Animation Name
+1. Dimensions Width And Height Must Be The Same
 
 #### Example
 
