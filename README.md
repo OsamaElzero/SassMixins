@@ -11,7 +11,7 @@ This Package Include
 2. Property Values
 3. Vendor Prefixes
 
-### Example
+#### Example
 
 `@include prefixer(transition, all .3s ease, webkit moz o);`
 
@@ -21,7 +21,7 @@ This Package Include
 
 1. Property Value
 
-### Example
+#### Example
 
 `@include opacity(.5);`
 
@@ -31,7 +31,7 @@ This Package Include
 
 1. Animation Name
 
-### Example
+#### Example
 
 `@include keyframes(SlideUpAndDown);`
 
@@ -41,7 +41,7 @@ This Package Include
 
 1. Color
 
-### Example
+#### Example
 
 `@include overlay(black, .5);`
 
@@ -51,7 +51,7 @@ This Package Include
 
 No
 
-### Example
+#### Example
 
 `@include centerer();`
 
@@ -61,7 +61,7 @@ No
 
 1. Animation Name
 
-### Example
+#### Example
 
 `@include keyframes(SlideUpAndDown)`
 
@@ -71,6 +71,6 @@ No
 
 1. Animation Name
 
-### Example
+#### Example
 
 `@include keyframes(SlideUpAndDown)`
