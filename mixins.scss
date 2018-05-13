@@ -88,9 +88,11 @@
  ** Example: @include placeholder( Add Properties Here );
  */
 
- @mixin placeholder {
-   ::-webkit-input-placeholder {@content}
-   ::-moz-placeholder          {@content}
-   :-ms-input-placeholder      {@content}
-   :-moz-placeholder           {@content}
+ @mixin placeholder() {
+   ::-webkit-input-placeholder {@content};
+   ::-moz-placeholder          {@content};
+   :-ms-input-placeholder      {@content};
+   :-moz-placeholder           {@content};
  }
+
+
