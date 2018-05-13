@@ -1,0 +1,96 @@
+/*
+ ** Prefix CSS3 Properties
+ ** Accept Arguments => Property Name, Property Values, Vendor Prefixes
+ ** Example: @include prefixer(transition, all .3s ease, webkit moz o)
+ */
+
+  @mixin prefixer($property, $value, $prefixes: ()) {
+    @each $prefix in $prefixes {
+      #{'-' + $prefix + '-' + $property}: $value;
+    }
+    #{$property}: $value;
+  }
+  
+  /*
+ ** Opacity Mixin For All Browsers
+ ** Accept Argument => Property Value
+ ** Example: @include opacity(.5)
+ */
+
+ @mixin opacity($value) {
+   zoom: 1;
+   $opacity-ie: $value * 100;
+   filter: alpha(opacity = $opacity-ie);
+   opacity: $value;
+ }
+
+/*
+ ** Animation Mixin For All Browser
+ ** Accept Argument => Animation Name
+ ** Example: @include keyframes(SlideUpAndDown)
+ */
+
+ @mixin keyframes($name) {
+   @-webkit-keyframes #{$name} {
+     @content;
+   }
+   @-moz-keyframes #{$name} {
+     @content;
+   }
+   @keyframes #{$name} {
+     @content;
+   }
+ }
+
+/*
+ ** Overlay Mixin
+ ** Accept Argument => Color
+ ** Example: @include overlay(black, .5);
+ */
+
+@mixin overlay($color) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color;
+}
+
+/*
+ ** Center Element Horizontally and Vertically
+ ** Accept No Arguments
+ ** Example: @include centerer();
+ */
+
+@mixin centerer() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include prefixer(transform, translate(-50%, -50%), webkit moz o);
+}
+
+/*
+ ** Circle Mixin
+ ** Accept Argument => Dimensions
+ ** Example: @include circle(100px);
+ */
+
+@mixin circle($dimension) {
+  width: $dimension;
+  height: $dimension;
+  border-radius: 50%;
+}
+
+/*
+ ** Placeholder Mixin
+ ** Accept No Arguments
+ ** Example: @include placeholder( Add Properties Here );
+ */
+
+ @mixin placeholder {
+   ::-webkit-input-placeholder {@content}
+   ::-moz-placeholder          {@content}
+   :-ms-input-placeholder      {@content}
+   :-moz-placeholder           {@content}
+ }
