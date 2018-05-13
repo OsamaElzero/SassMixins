@@ -13,7 +13,7 @@ This Package Include
 
 #### Example
 
-```
+```css
 .class {
   @include prefixer(transition, all .3s ease, webkit moz o);
 }
