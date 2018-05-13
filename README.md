@@ -61,7 +61,45 @@ This Package Include
 
 #### Example
 
-`@include keyframes(SlideUpAndDown);`
+```css
+@include keyframes(BigFont) {
+  from {
+    font-size: 10px;
+  }
+  to {
+    font-size: 20px;
+  }
+}
+```
+
+#### Output
+
+```css
+@-webkit-keyframes BigFont {
+  from {
+    font-size: 10px;
+  }
+  to {
+    font-size: 20px;
+  }
+}
+@-moz-keyframes BigFont {
+  from {
+    font-size: 10px;
+  }
+  to {
+    font-size: 20px;
+  }
+}
+@keyframes BigFont {
+  from {
+    font-size: 10px;
+  }
+  to {
+    font-size: 20px;
+  }
+}
+```
 
 ## Overlay
 
