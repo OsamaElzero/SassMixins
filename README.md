@@ -3,9 +3,9 @@ A collection of useful SASS Mixins
 
 This Package Include
 
-1. Css3 Properties Vendor Prefixer
+## Css3 Properties Vendor Prefixer
 
-### Accept Arguments 
+#### Accept Arguments 
 
 1. Property Name
 2. Property Values
@@ -15,9 +15,9 @@ This Package Include
 
 `@include prefixer(transition, all .3s ease, webkit moz o);`
 
-2. Opacity
+## Opacity
 
-### Accept Arguments 
+#### Accept Arguments 
 
 1. Property Value
 
@@ -25,9 +25,9 @@ This Package Include
 
 `@include opacity(.5);`
 
-3. Animation Keyframes
+## Animation Keyframes
 
-### Accept Arguments 
+#### Accept Arguments 
 
 1. Animation Name
 
@@ -35,9 +35,9 @@ This Package Include
 
 `@include keyframes(SlideUpAndDown);`
 
-4. Overlay
+## Overlay
 
-### Accept Arguments 
+#### Accept Arguments 
 
 1. Color
 
@@ -45,9 +45,9 @@ This Package Include
 
 `@include overlay(black, .5);`
 
-5. Centerer
+## Centerer
 
-### Accept Arguments 
+#### Accept Arguments 
 
 No
 
@@ -55,9 +55,9 @@ No
 
 `@include centerer();`
 
-6. Circle
+## Circle
 
-### Accept Arguments 
+#### Accept Arguments 
 
 1. Animation Name
 
@@ -65,9 +65,9 @@ No
 
 `@include keyframes(SlideUpAndDown)`
 
-7. Placeholder
+## Placeholder
 
-### Accept Arguments 
+#### Accept Arguments 
 
 1. Animation Name
 
