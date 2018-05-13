@@ -13,7 +13,9 @@ This Package Include
 
 #### Example
 
-`@include prefixer(transition, all .3s ease, webkit moz o);`
+`.class {
+  @include prefixer(transition, all .3s ease, webkit moz o);
+ }`
 
 ## Opacity
 
