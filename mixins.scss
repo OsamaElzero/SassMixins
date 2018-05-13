@@ -95,4 +95,14 @@
    :-moz-placeholder           {@content};
  }
 
+ /*
+  ** Background Cover Mixin
+  ** Accept No Arguments
+  ** Example: @include cover();
+  */
 
+ @mixin cover() {
+  @include prefixer(background-size, cover, webkit moz o);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
