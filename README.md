@@ -18,6 +18,17 @@ This Package Include
   @include prefixer(transition, all .3s ease, webkit moz o);
 }
  ```
+#### Output
+
+```css
+.class {
+  @include prefixer(transition, all .3s ease, webkit moz o);
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+ ```
 
 ## Opacity
 
