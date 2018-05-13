@@ -13,9 +13,11 @@ This Package Include
 
 #### Example
 
-`.class {
+```
+.class {
   @include prefixer(transition, all .3s ease, webkit moz o);
- }`
+}
+ ```
 
 ## Opacity
 
