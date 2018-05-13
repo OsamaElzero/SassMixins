@@ -106,10 +106,28 @@ This Package Include
 #### Accept Arguments 
 
 1. Color
+2. Opacity
 
 #### Example
 
-`@include overlay(black, .5);`
+```css
+.class {
+  @include overlay(black, .5);
+}
+```
+
+#### Output
+
+```css
+.class {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+```
 
 ## Centerer
 
