@@ -137,7 +137,25 @@ No
 
 #### Example
 
-`@include centerer();`
+```css
+.class {
+  @include centerer();
+}
+```
+
+#### Output
+
+```css
+.class {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+```
 
 ## Circle
 
@@ -147,7 +165,21 @@ No
 
 #### Example
 
-`@include keyframes(SlideUpAndDown)`
+```css
+.class {
+  @include circle(100px);
+}
+```
+
+#### Output
+
+```css
+.class {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+```
 
 ## Placeholder
 
@@ -157,4 +189,27 @@ No
 
 #### Example
 
-`@include keyframes(SlideUpAndDown)`
+```css
+.class {
+  @include placeholder {
+    color: #EEE;
+  }
+}
+```
+
+#### Output
+
+```css
+.class ::-webkit-input-placeholder {
+  color: #EEE;
+}
+.class ::-moz-placeholder {
+  color: #EEE;
+}
+.class :-ms-input-placeholder {
+  color: #EEE;
+}
+.class :-moz-placeholder {
+  color: #EEE;
+}
+```
