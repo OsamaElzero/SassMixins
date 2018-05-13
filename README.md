@@ -1,4 +1,4 @@
-# Elzero Sass Mixins
+# **Elzero Sass Mixins**
 A collection of useful SASS Mixins
 
 This Package Include
@@ -185,7 +185,7 @@ No
 
 #### Accept Arguments 
 
-![#f03c15](https://placehold.it/15/f03c15/000000?text=No)
+No
 
 #### Example
 
