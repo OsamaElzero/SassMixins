@@ -106,3 +106,8 @@
   background-position: center center;
   background-repeat: no-repeat;
 }
+
+@mixin button()
+{
+	text-decoration:none
+}
