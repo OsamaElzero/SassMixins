@@ -101,7 +101,7 @@
   ** Example: @include cover();
   */
 
- @mixin cover() {
+ @mixin background() {
   @include prefixer(background-size, cover, webkit moz o);
   background-position: center center;
   background-repeat: no-repeat;
