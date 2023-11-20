@@ -106,3 +106,17 @@
   background-position: center center;
   background-repeat: no-repeat;
 }
+
+/*
+  ** hover box-shadow
+  ** Accept Argument => $initial and $hover, which represent the box-shadow styles for the normal and hover states, respectively. If no values are provided, it uses default values.
+  ** Example: @include hover-box-shadow;
+*/
+@mixin hover-box-shadow($initial: 0 0 5px rgba(0, 0, 0, 0.2), $hover: 0 0 10px rgba(0, 0, 0, 0.4)) {
+  box-shadow: $initial;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: $hover;
+  }
+}
