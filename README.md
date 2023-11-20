@@ -240,3 +240,32 @@ No
   background-repeat: no-repeat;
 }
 ```
+
+## hover box-shadow
+
+#### Accept Arguments 
+
+1. box-shadow in the normal state
+2. box-shadow in the hover state
+
+If no values are provided, it uses default values.
+
+#### Example
+
+```css
+.class {
+  @include hover-box-shadow;
+}
+```
+
+#### Output
+
+```css
+.class {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+.class:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4)
+}
+```
